@@ -2,7 +2,6 @@ import React from 'react'
 import { entertainment } from '../../Data'
 import styled from 'styled-components'
 import EntertainmentItem from './EntertainmentItem'
-
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from 'react-slick'

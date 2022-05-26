@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {MdFavoriteBorder} from 'react-icons/md'
 import {BsPlayFill} from 'react-icons/bs'
 import {BiDotsHorizontalRounded} from 'react-icons/bi'
+import { useNavigate } from 'react-router-dom';
 const Infoi = styled.div`
 opacity:0;
  position:absolute ;
@@ -68,11 +69,19 @@ font-size:15px ;
 font-weight:bold ;
 `
 const EntertainmentItem = ({item}) => {
+  const navigate = useNavigate();
+  const displayPage = (e)=>{
+    
+    
+    navigate("/detail", { replace: true });
+    
+    }
+  
   return (
-    <Container>
+    <Container onClick={displayPage}>
          <Image src={item.img}/>
          <Infoi>
-        <Icon><BsPlayFill/></Icon>
+        <Icon ><BsPlayFill/></Icon>
           <Icon><MdFavoriteBorder/></Icon>
           <Icon><BiDotsHorizontalRounded/></Icon>
         </Infoi>

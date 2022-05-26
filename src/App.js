@@ -5,6 +5,7 @@ import Music from './Pages/Music';
 import Podcast from './Pages/Podcast';
 import AudioBook from './Pages/AudioBook';
 import Lyibrary from './Pages/Lyibrary';
+import DetailPage from './Pages/DetailPage';
 import {
   BrowserRouter,
   Routes,
@@ -20,6 +21,7 @@ function App() {
       <Route path="/podcast" element={< Podcast/>} />
       <Route  path="/audiobook" element={<AudioBook/> }/>
       <Route  path="/lyibrary" element={<Lyibrary/> }/>
+      <Route path="/detail"  element={<DetailPage/>}/>
     </Routes>
   </BrowserRouter> 
   </div>
