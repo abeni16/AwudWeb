@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-
+import { Link } from 'react-router-dom';
 const Menu = ({title,MenuObject}) => {
     useEffect(()=>{
         const allLi = document.querySelector(".MenuContainer ul").querySelectorAll("li");
@@ -17,10 +17,13 @@ const Menu = ({title,MenuObject}) => {
         {MenuObject && MenuObject.map((menu)=>(
             <li key={menu.id}>
                 {""}
+                <Link to={menu.too}>
                 <a href='#'>
                     <i>{menu.icon}</i>
                     <span>{menu.name}</span>
                 </a>
+                </Link>
+
             </li>
         ))}
     </ul>

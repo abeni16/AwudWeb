@@ -8,23 +8,25 @@ const MenuList = [{
     id:1,
     icon:<FiMusic/>,
     name:"Music",
-    to:"/"
+    too:"/"
 },
 {
     id:2,
     icon:<FaPodcast/>,
     name:"Podcast",
-    to:"/podcast"
+    too:"/podcast"
 },
 {
     id:3,
     icon:<BiBookOpen/>,
-    name:"AudioBook"
+    name:"AudioBook",
+    too:"/audiobook"
 },
 {
     id:4,
     icon:<CgFolder/>,
-    name:"Lyibrary"
+    name:"Lyibrary",
+    too:"/lyibrary"
 },
 ]
 export default MenuList

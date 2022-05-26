@@ -7,10 +7,12 @@ import image5 from '../src/Image/photo_2022-05-21_21-46-58.jpg'
 import audio from "../src/Image/India.Arie - Let It Snow.mp3";
 import audio2 from "../src/Image/India.Arie - Mary, Did You Know.mp3";
 import audio3 from "../src/Image/DJOW - LOSING CONTROL (ORIGINAL MIX).mp3";
+import audio4 from "../src/Image/Teddy  Girmawineto.mp3"
 import image6 from '../src/Image/photo_2022-05-21_21-47-13.jpg';
 import image7 from '../src/Image/photo_2022-05-21_21-46-55.jpg'
 import image8 from '../src/Image/photo_2022-05-21_21-47-20.jpg'
 import image9 from '../src/Image/photo_2022-05-21_21-47-18.jpg'
+import audio10 from '../src/Image/Teddy  alamn alamn.mp3'
 
 export const AllCatgories = [
     {
@@ -264,9 +266,15 @@ export const AllAudio = [
       audio: audio2,
     },
     {
-      title: "lanchi beye",
+      title: "Girmawineto",
       artist: "teddy afro",
       image: image2,
-      audio: audio3,
+      audio: audio4,
     },
+    {
+        title: "Alamn Alamn",
+        artist: "teddy afro",
+        image: image2,
+        audio: audio10,
+      },
   ];
