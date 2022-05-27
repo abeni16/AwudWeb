@@ -7,15 +7,21 @@ import TopBar from "../Components/TopBar";
 const Div = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
+  height:100vh;
+  margin-top: 50px ;
+
 `;
 const DetailPage = () => {
   return (
+      <>
+      
     <Div >
-    <TopBar/> 
+    <TopBar/>
         <DetailDiscription />
         <DetailLists />
   </Div>
+  </>
     
    
   );

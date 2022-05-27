@@ -21,7 +21,7 @@ function App() {
       <Route path="/podcast" element={< Podcast/>} />
       <Route  path="/audiobook" element={<AudioBook/> }/>
       <Route  path="/lyibrary" element={<Lyibrary/> }/>
-      <Route path="/detail"  element={<DetailPage/>}/>
+      <Route path="/detail/:id"  element={<DetailPage/>}/>
     </Routes>
   </BrowserRouter> 
   </div>

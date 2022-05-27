@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../Styles/MainMenu.css"
 // import Categories from './Categories';
 import MusicLoveCard from '../Components/MusicLoveCard';
@@ -11,17 +11,37 @@ import Entertainment from '../Components/Podcast/Entertainment';
 import Slider from '../Components/Slider';
 import Technology from '../Components/Podcast/Technology';
 import Categories from '../Components/Podcast/Categories';
-
+import axios from 'axios';
 const Podcast = () => {
+  const [Podcasts,setPodcsts] = useState([]);
+  useEffect(()=>{
+    const getPodcast = async ()=>{
+      try{
+     const res = await axios.get('http://localhost:5000/podcast');
+     setPodcsts(res.data)
+     
+ 
+      }
+      catch(err){
+console.log(err)
+      }
+   
+    }
+    getPodcast()
+  
+  },[])
   return (
-    <div className='mainContainer' style={{ overflowY: 'scroll', }} >
+    
+   <>
+
+    <div className='mainContainer' style={{ overflowY: 'scroll', marginTop:"50px" }} >
         <TopBar/> 
         <Recent/>
-        <Entertainment/> 
+        <Entertainment /> 
         <Technology/>
         <Categories/>
         </div>
-    
+        </>
   )
 }
 

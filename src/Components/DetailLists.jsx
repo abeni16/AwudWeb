@@ -8,11 +8,12 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+   background-color:#121217 ;
 `;
 const RowTitle = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 6px;
+  padding: 5px;
 `;
 const Row = styled.div`
   display: flex;
@@ -39,7 +40,7 @@ const RowContainer = styled.div`
   align-items: center;
 `;
 const ImageContainer = styled.div`
-  margin: 12px;
+  margin: 6px;
 `;
 const Image = styled.img`
   width: 48px;

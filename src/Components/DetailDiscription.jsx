@@ -6,6 +6,7 @@ import imageurl from "../Image/photo_2022-05-21_21-47-02.jpg";
 const Container = styled.div`
   display: flex;
   flex-direction: row;
+  background-color:#121217 ;
 `;
 const ImageContainer = styled.div`
   flex-basis: 25%;
@@ -59,6 +60,7 @@ const Button = styled.button`
 `;
 const SubButton = styled.div`
   margin-left: 24px;
+  
 `;
 
 const DeatailDiscription = () => {

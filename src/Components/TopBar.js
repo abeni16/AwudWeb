@@ -8,7 +8,7 @@ const Navbar = styled.div`
     
   overflow: hidden;
   
-  /* position: fixed;  */
+  position: fixed; 
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   
@@ -25,7 +25,7 @@ display:flex ;
 align-items:center ;
 justify-content: left;
 padding-left:25px ;
-flex: 75%;
+flex: 50%;
  
 `
 const InputText = styled.input`
@@ -44,14 +44,16 @@ width:70px ;
 font-size:16px ;
 `
 const RightSide = styled.div`
-flex:25% ;
-display:flex ;
-justify-content:right ;
+flex:5% ;
+display: flex;
+justify-content:left ;
+padding-left:5px ;
 align-items:center ;
+
+
 `
 const Icon = styled.div`
    z-index:2 ;
-   position:inherit;
    width:30px ;
    height:30px ;
    color:white ;

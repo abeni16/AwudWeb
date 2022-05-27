@@ -17,7 +17,7 @@ color:white ;
 padding:20px 20px 0px 20px ;
 
 `
-const Entertainment = () => {
+const Entertainment = ({Podcasts}) => {
   const settings = {
     // lazyLoad:true,
     infinite: false,
@@ -31,6 +31,13 @@ const Entertainment = () => {
   };
   return (
       <>
+      {
+        console.log("From entertainment component")
+       
+      }
+      {
+         console.log(Podcasts)
+      }
       <Tetxt>Entertainment</Tetxt>
       <Container>
       <Slider {...settings}>

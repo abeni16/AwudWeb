@@ -3,6 +3,7 @@ import styled from "styled-components";
 import PlayerControls from "./PlayerControls";
 import PlayerDetails from "./PlayerDetails";
 import { AllAudio } from "../Data";
+import axios from "axios";
 
 const Container = styled.div`
   display: flex;
@@ -102,7 +103,28 @@ const Slider = styled.input`
 `;
 
 const PlayerComponent = () => {
-  const [audios] = useState(AllAudio);
+  const [audioss,setAudios] = useState([]);
+  const [audios] = useState(AllAudio)
+  useEffect(()=>{
+    const getPodcast = async ()=>{
+      try{
+     const res = await axios.get('http://localhost:5000/podcast');
+     setAudios(res.data)
+    
+ 
+      }
+      catch(err){
+console.log(err)
+      }
+   
+    }
+    getPodcast()
+  
+  },[audios])
+  // console.log(audioss)
+  
+
+  // console.log(audios)
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [nextSongIndex, setNextSongIndex] = useState(currentSongIndex + 1);
   const [isPlaying, setIsPlaying] = useState(false);

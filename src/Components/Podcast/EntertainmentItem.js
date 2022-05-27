@@ -4,6 +4,7 @@ import {MdFavoriteBorder} from 'react-icons/md'
 import {BsPlayFill} from 'react-icons/bs'
 import {BiDotsHorizontalRounded} from 'react-icons/bi'
 import { useNavigate } from 'react-router-dom';
+import s from '../../Image/photo_2022-05-21_21-47-36.jpg'
 const Infoi = styled.div`
 opacity:0;
  position:absolute ;
@@ -73,13 +74,13 @@ const EntertainmentItem = ({item}) => {
   const displayPage = (e)=>{
     
     
-    navigate("/detail", { replace: true });
+    navigate("/detail/:id", { replace: true });
     
     }
   
   return (
     <Container onClick={displayPage}>
-         <Image src={item.img}/>
+         <Image src={s}/>
          <Infoi>
         <Icon ><BsPlayFill/></Icon>
           <Icon><MdFavoriteBorder/></Icon>

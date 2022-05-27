@@ -82,7 +82,7 @@ font-size: 20px;
 }
 .MenuContainer ul li a{
     text-decoration: none;
-    color: #232323;;
+    color:red;;
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -129,7 +129,7 @@ font-size: 20px;
 }
 .playListContainer .nameContainer i{
 cursor: pointer;
-color: #f1f1f1;
+color: red;
 }
 .playListContainer .playListScroll {
     height: 140px;

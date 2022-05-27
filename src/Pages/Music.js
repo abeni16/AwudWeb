@@ -9,15 +9,17 @@ import TopBar from '../Components/TopBar';
 import Categories from '../Components/Podcast/Categories';
 const Music = () => {
   return (
-    <div className='mainContainer' style={{ overflowY: 'scroll', }} >
-          <TopBar/> 
+    <>
+   
+    <div className='mainContainer' style={{ overflowY: 'scroll', marginTop:"50px"}} >
+    <TopBar/> 
           <MusicLoveCard/> 
           <LovedArtist/>
           <Categories/>
           <NewRelease/>
           <Generes/> 
         </div>
-    
+        </>
   )
 }
 
