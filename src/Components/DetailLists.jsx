@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-   background-color:#121217 ;
+  background-color: #121217;
 `;
 const RowTitle = styled.div`
   display: flex;
@@ -70,22 +70,22 @@ const Button = styled.button`
 `;
 const RowText = styled.h3``;
 const DetailLists = () => {
-  const [episodes,setEpisodes] = useState([]);
-  useEffect(()=>{
-  
-    const getPodcast = async ()=>{
-      try{
-     const res = await axios.get(`http://localhost:5000/episode/${'62903754516551ab5b02d8e9'}/epsiode`);
-     setEpisodes(res.data)
-      }
-      catch(err){
-console.log(err)
-      }
-   
-    }
-    getPodcast()
-  
-  },[])
+  const [episodes, setEpisodes] = useState([]);
+  //   useEffect(()=>{
+
+  //     const getPodcast = async ()=>{
+  //       try{
+  //      const res = await axios.get(`http://localhost:5000/episode/${'62903754516551ab5b02d8e9'}/epsiode`);
+  //      setEpisodes(res.data)
+  //       }
+  //       catch(err){
+  // console.log(err)
+  //       }
+
+  //     }
+  //     getPodcast()
+
+  //   },[])
   return (
     <Container>
       <RowTitle>
@@ -101,11 +101,8 @@ console.log(err)
       </RowTitle>
       <hr />
       <RowList>
-       
-      {
-        // episodes.map((p)=> console.log(p) )
-        console.log(episodes)
-      }
+        {// episodes.map((p)=> console.log(p) )
+        console.log(episodes)}
         {/* <Row>
           <RowContainer>
             <ImageContainer>
