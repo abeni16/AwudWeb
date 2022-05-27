@@ -40,7 +40,7 @@ const ArtistTitle = styled.h4`
 `;
 
 const PlayerDetails = (props) => {
-  console.log(imageurl);
+ 
   return (
     <Container>
       <ImageContainer>

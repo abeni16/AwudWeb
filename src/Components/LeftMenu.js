@@ -10,7 +10,11 @@ import TrackList from "./TrackList"
 import PlayerComponent from './PlayerComponent';
 const LeftMenu = () => {
     return (
+        
         <div className='leftMenu'>
+            {
+                console.log("From left menu")
+            }
             <div className='logoContainer'>
                <img  src={pic} />
                 <h2>Awd</h2>
@@ -19,7 +23,7 @@ const LeftMenu = () => {
                 </i>
                 </div>
            
-            {console.log(MenuList)}
+            
             <Menu title={'Menu'} MenuObject={MenuList}/>
             <PlayerComponent/>
         </div>

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import imageurl from "../Image/photo_2022-05-21_21-47-02.jpg";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import ShuffleIcon from "@mui/icons-material/Shuffle";
+import axios from "axios";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -69,6 +70,22 @@ const Button = styled.button`
 `;
 const RowText = styled.h3``;
 const DetailLists = () => {
+  const [episodes,setEpisodes] = useState([]);
+  useEffect(()=>{
+  
+    const getPodcast = async ()=>{
+      try{
+     const res = await axios.get(`http://localhost:5000/episode/${'62903754516551ab5b02d8e9'}/epsiode`);
+     setEpisodes(res.data)
+      }
+      catch(err){
+console.log(err)
+      }
+   
+    }
+    getPodcast()
+  
+  },[])
   return (
     <Container>
       <RowTitle>
@@ -84,7 +101,12 @@ const DetailLists = () => {
       </RowTitle>
       <hr />
       <RowList>
-        <Row>
+       
+      {
+        // episodes.map((p)=> console.log(p) )
+        console.log(episodes)
+      }
+        {/* <Row>
           <RowContainer>
             <ImageContainer>
               <Image src={imageurl}></Image>
@@ -178,26 +200,7 @@ const DetailLists = () => {
               <PlayArrowIcon />
             </Button>
           </RowContainer>
-        </Row>
-        <Row>
-          <RowContainer>
-            <ImageContainer>
-              <Image src={imageurl}></Image>
-            </ImageContainer>
-            <RowText>Tikur Sew</RowText>
-          </RowContainer>
-          <RowContainer>
-            <RowText>teddy afro</RowText>
-          </RowContainer>
-          <RowContainer>
-            <RowText>3:23</RowText>
-          </RowContainer>
-          <RowContainer>
-            <Button>
-              <PlayArrowIcon />
-            </Button>
-          </RowContainer>
-        </Row>
+        </Row> */}
       </RowList>
     </Container>
   );

@@ -31,13 +31,7 @@ const Entertainment = ({Podcasts}) => {
   };
   return (
       <>
-      {
-        console.log("From entertainment component")
-       
-      }
-      {
-         console.log(Podcasts)
-      }
+   
       <Tetxt>Entertainment</Tetxt>
       <Container>
       <Slider {...settings}>

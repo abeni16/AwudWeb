@@ -15,10 +15,13 @@ import axios from 'axios';
 const Podcast = () => {
   const [Podcasts,setPodcsts] = useState([]);
   useEffect(()=>{
+  
     const getPodcast = async ()=>{
       try{
      const res = await axios.get('http://localhost:5000/podcast');
+    
      setPodcsts(res.data)
+   
      
  
       }
@@ -37,9 +40,10 @@ console.log(err)
     <div className='mainContainer' style={{ overflowY: 'scroll', marginTop:"50px" }} >
         <TopBar/> 
         <Recent/>
-        <Entertainment /> 
+        <Entertainment Podcasts={Podcasts} /> 
         <Technology/>
         <Categories/>
+       
         </div>
         </>
   )

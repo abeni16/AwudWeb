@@ -97,7 +97,7 @@ const PlayerControls = (props) => {
       return `${min}m ${sec}s`;
     }
   };
-  console.log(props.currentTime);
+  
   return (
     <MainContainer>
       <Container>

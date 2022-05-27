@@ -26,12 +26,12 @@ export const AllCatgories = [
         title:"Charts"
     },
     {
-        id:2,
+        id:3,
         img:image1,
         title:"New Release"
     },
     {
-        id:3,
+        id:4,
         img:image1,
         title:"New Release"
     },
@@ -116,7 +116,7 @@ export const LoveArtist =[
     
     },
     {
-        id:3,
+        id:4,
         img:image3,
          artistName:"Lij Michael",
     },
@@ -160,12 +160,12 @@ export const geners = [
         title:"Pop"
     },
     {
-        id:2,
+        id:3,
         img:image5,
         title:"R&B"
     },
     {
-        id:3,
+        id:4,
         img:image5,
         title:"Dance & EDM"
     },
@@ -241,12 +241,12 @@ export const all =[
         title:"Art"
     },
     {
-        id:2,
+        id:3,
         img:image6,
         title:"Personal Development"
     },
     {
-        id:3,
+        id:4,
         img:image8,
         title:"College"
     },
